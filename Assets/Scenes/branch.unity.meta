@@ -1,4 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
+=======
+<<<<<<<< HEAD:Assets/Scenes/main test.unity.meta
+guid: 4719a3ee294bf2048983554f2736201d
+========
+>>>>>>> Stashed changes
 guid: 9c7f7a98accf33347b387e92fac08cc6
 DefaultImporter:
   externalObjects: {}
