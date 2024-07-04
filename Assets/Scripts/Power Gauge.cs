@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class UI_Script : MonoBehaviour
 {
-    float HP = 0;
+    float Power = 0;
     public Slider healthBar;
     bool Maxgauge;
 
@@ -21,13 +21,12 @@ public class UI_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthBar.value = HP;
-        if (HP >= 150)
+        healthBar.value = Power;
+        if (Power >= 150)
         {
             Maxgauge = true;
-
         }
-        else if (HP <= 0)
+        else if (Power <= 0)
         {
             Maxgauge = false;
         }
@@ -35,11 +34,11 @@ public class UI_Script : MonoBehaviour
         {
             if (Maxgauge)
             {
-                HP -= 1;
+                Power -= 1;
             }
             if (Maxgauge == false)
             { 
-                HP += 1; 
+                Power += 1; 
             }
         }
     }
