@@ -2,26 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameController : MonoBehaviour
+public class PlayerTriggers : MonoBehaviour
 {
 
-
-    public int score;
-
+    public int shield;
+    public bool live;
+    public WinLose WinLoseCond;
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;   
+        shield = 2;
+        live = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void IncreaseScore()
-    {
-        score++;
+        if(!live)
+        {
+            WinLoseCond.LoseLevel();
+        }
     }
 }

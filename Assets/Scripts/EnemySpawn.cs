@@ -7,7 +7,7 @@ public class EnemySpawn : MonoBehaviour
     public Transform SpawnPoint;
     public GameObject EnemyPrefab;
 
-    public float fireRate = 400000f;
+    public float fireRate = 4000000f;
     private float nextFire = 0.0f;
 
     // Start is called before the first frame update

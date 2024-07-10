@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
+
     public float life = 3;
+    public GameController con;
 
     void Awake()
     {
@@ -13,7 +15,9 @@ public class bullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        
         Destroy(collision.gameObject);
+        con.IncreaseScore();
         Destroy(gameObject);
     }
 
